@@ -7,7 +7,6 @@ ______________________________
 ```r
 library(ggplot2)
 library(dplyr)
-library(scales)
 ```
 
 **Load the data**
