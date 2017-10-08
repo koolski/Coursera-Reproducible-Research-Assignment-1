@@ -6,7 +6,6 @@ ______________________________
 ```{r, echo=TRUE, message=FALSE}
 library(ggplot2)
 library(dplyr)
-library(scales)
 ```
 
 **Load the data**
