@@ -1,6 +1,6 @@
-#Reproducible research. Assignment 1
+# Reproducible research. Assignment 1
 __________________________
-##Loading and preprocessing the data
+## Loading and preprocessing the data
 ______________________________
 
 
@@ -44,7 +44,7 @@ activity$interval <- format(strptime(activity$interval, format="%H%M"), format =
 ```
 
 
-##What is mean total number of steps taken per day?
+## What is mean total number of steps taken per day?
 _____________________________________________________
 
 **Calculate the total number of steps taken per day**
@@ -69,7 +69,7 @@ medianvalue <- median(daysteps)
 ```
 Mean: 9354.2295082, Median:10395
 
-##What is the average daily activity pattern?
+## What is the average daily activity pattern?
 ___________________
 
 **Make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)**
@@ -89,7 +89,7 @@ max_steps <- average_steps[which.max(average_steps$steps), ][[1]]
 ```
 The interval 08:35 has the maximum steps
 
-##Imputing missing values
+## Imputing missing values
 __________________________
 **Calculate and report the total number of missing values in the dataset**
 
@@ -131,7 +131,7 @@ Mean: 1.0751738 &times; 10<sup>4</sup>, Median: 1.0656 &times; 10<sup>4</sup>
 
 The mean and median values differ from those which were calculated with `NAs`. The values became greater
 
-##Are there differences in activity patterns between weekdays and weekends?
+## Are there differences in activity patterns between weekdays and weekends?
 ___________________
 **Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.**
 
